@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Stage 1: Build stage to handle file preparation
-FROM ubuntu:22.04 as build
+FROM ubuntu:22.04 AS build
 
 # Copy the files to the build image
 COPY ./start-llama-cpp.sh ./start-ollama.sh ./benchmark_llama-cpp.sh /llm/scripts/

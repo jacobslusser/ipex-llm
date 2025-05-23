@@ -1,5 +1,10 @@
-# print some gpu info
-echo "Mapped GPU info (sycl-ls):"
+# print some info
+echo "TZ=$TZ"
+echo "OLLAMA_HOST=$OLLAMA_HOST"
+echo "OLLAMA_MODELPATH=$OLLAMA_MODELPATH"
+echo "OLLAMA_MODELNAME=$OLLAMA_MODELNAME"
+echo ""
+echo "GPU info (sycl-ls):"
 sycl-ls
 echo ""
 
@@ -19,8 +24,8 @@ export ZES_ENABLE_SYSMAN=1
 
 # import the model
 echo "FROM $OLLAMA_MODELPATH" > Modelfile
-./ollama create $OLLAMA_MODELNAME -f Modelfile
+# ./ollama create '$OLLAMA_MODELNAME' -f Modelfile
 
 # start ollama service
-echo "Starting Ollama server..."
-exec ./ollama serve
+# echo "Starting Ollama server..."
+# exec ./ollama serve
