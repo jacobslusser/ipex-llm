@@ -29,3 +29,6 @@ echo "FROM $OLLAMA_MODELPATH" > Modelfile
 # start ollama service
 # echo "Starting Ollama server..."
 # exec ./ollama serve
+
+# testing
+exec /bin/bash
